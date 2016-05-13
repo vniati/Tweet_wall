@@ -34,9 +34,9 @@
   var showRts = true;
   var customCallbackFunction = null;
   var showInteractionLinks = true;
-  var showImages = false;
+  var showImages = true;
   var targetBlank = true;
-  var lang = 'en';
+  var lang = 'fr';
   var permalinks = true;
   var dataOnly = false;
   var script = null;
@@ -95,7 +95,7 @@
   var twitterFetcher = {
     fetch: function(config) {
       if (config.maxTweets === undefined) {
-        config.maxTweets = 20;
+        config.maxTweets = 50;
       }
       if (config.enableLinks === undefined) {
         config.enableLinks = true;
@@ -256,7 +256,7 @@
             rt: rts[n],
             tid: tids[n],
             permalinkURL: (permalinksURL[n] === undefined) ?
-                '' : permalinksURL[n].href 
+                '' : permalinksURL[n].href
           });
           n++;
         }
