@@ -68,10 +68,12 @@
 // A simple example to get my latest tweet and write to a HTML element with
 // id "example1". Also automatically hyperlinks URLS and user mentions and
 // hashtags.
+
+
 var config1 = {
-  "id": '730373344818827264',
+  "id": '723057880971104256',
   "domId": 'example1',
-  "maxTweets": 1,
+  "maxTweets": 0,
   "enableLinks": true
 };
 twitterFetcher.fetch(config1);
@@ -84,9 +86,9 @@ twitterFetcher.fetch(config1);
 // request to Twitter specifiying we would like results where possible in
 // English language.
 var config2 = {
-  "id": '730373344818827264',
+  "id": '723057880971104256',
   "domId": 'example2',
-  "maxTweets": 5,
+  "maxTweets": 0,
   "enableLinks": true,
   "showUser": true,
   "showTime": true,
@@ -99,9 +101,9 @@ twitterFetcher.fetch(config2);
 // A simple example to get latest 5 tweets for #API tag and shows any images
 // attached to tweets.
 var config3 = {
-  "id": '730373344818827264',
+  "id": '723057880971104256',
   "domId": 'example3',
-  "maxTweets": 5,
+  "maxTweets": 30,
   "enableLinks": true,
   "showImages": true
 };
@@ -114,7 +116,7 @@ twitterFetcher.fetch(config3);
 // custom format to display the date/time of the post, and does not show
 // retweets.
 var config4 = {
-  "id": '730373344818827264',
+  "id": '723057880971104256',
   "domId": 'example4',
   "maxTweets": 3,
   "enableLinks": true,
@@ -142,7 +144,7 @@ twitterFetcher.fetch(config4);
 // if you need full control over the output.
 
 var config5 = {
-  "id": '730373344818827264',
+  "id": '723057880971104256',
   "domId": '',
   "maxTweets": 3,
   "enableLinks": true,
@@ -176,7 +178,7 @@ twitterFetcher.fetch(config5);
 // alternative custom format with moment.js to display the age of the post,
 // and does not show retweets.
 var config6 = {
-  "id": '345690956013633536',
+  "id": '723057880971104256',
   "domId": 'example6',
   "maxTweets": 3,
   "enableLinks": true,
@@ -239,7 +241,7 @@ require(['twitter-fetcher'], function (fetcher) {
 // to populate a template for example.
 
 var config8 = {
-  "id": '502160051226681344',
+  "id": '723057880971104256',
   "dataOnly": true,
   "customCallback": populateTpl
 };
