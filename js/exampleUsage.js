@@ -103,14 +103,14 @@ twitterFetcher.fetch(config2);
 var config3 = {
   "id": '723057880971104256',
   "domId": 'example3',
-  "maxTweets": 30,
+  "maxTweets": 40,
   "enableLinks": true,
   "showImages": true
 };
 twitterFetcher.fetch(config3);
 
 function populateTpl(tweets){
-  var element = document.getElementById('example8');
+  var element = document.getElementById('example3');
   var html = '<ul>';
   for (var i = 0, lgth = tweets.length; i < lgth ; i++) {
     var tweetObject = tweets[i];

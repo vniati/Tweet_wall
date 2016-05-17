@@ -3,6 +3,10 @@
 * You can do whatever the hell you want on your site :-)
 */
 
+img[src="undefined"] {
+    display: none;
+}
+
 body {
   font-family:Arial,"Liberation Sans",sans-serif;
 }
